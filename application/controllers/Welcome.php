@@ -21,6 +21,7 @@ class Welcome extends Application {
 	function index()
 	{
 		$this->data['pagebody'] = 'homepage';
+		$this->data['sessionid'] = session_id();
 		$this->render();
 	}
 
